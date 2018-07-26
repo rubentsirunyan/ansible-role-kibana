@@ -7,5 +7,5 @@
 - name: Add Kibana repository.
   template:
     src: kibana.repo.j2
-    dest: /etc/yum.repos.d/kibana.repo
+    dest: /etc/yum.repos.d/elasticsearch-{{ kibana_version }}.repo
     mode: 0644
